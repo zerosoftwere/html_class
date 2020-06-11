@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Layout</title>
+    <style>
+        main section {
+            padding: 20px;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 2px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 33%;
+            float: left;
+        }
+
+        .main {
+            width: 65%;
+            float: right;
+        }
+
+        .content::after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="header">Heading</section>
+        <div class="content">
+            <section class="sidebar">Side bar</section>
+            <section class="main">Main</section>
+        </div>
+        <section class="footer">Footer</section>
+    </main>
+</body>
+</html>

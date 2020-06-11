@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Layout</title>
+    <style>
+        .content {
+            width: 100%;
+            border-spacing: 4px;
+            padding: 0;
+        }
+
+        table td {
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="content">
+        <tr><td colspan="3">Heading</td></tr>
+        <tr><td width="33%">Side bar</td><td colspan="2">Main</td></tr>
+        <tr><td colspan="3">Footer</td></tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 4px;
+            grid-template-areas: 
+                'header header header'
+                'sidebar main main'
+                'footer footer footer'
+            ;
+        }
+
+        main > section {
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="header">Heading</section>
+        <section class="side Bar">Side bar</section>
+        <section class="main">Main</section>
+        <section class="footer">Footer</section>
+    </main>
+</body>
+</html>
